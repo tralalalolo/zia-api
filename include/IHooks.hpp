@@ -24,14 +24,14 @@ class IHooks : public std::enable_shared_from_this<IHooks>
 {
 public:
 	/// All methods signatures
-	using requestMethod = std::function<void(Request &, HTTPStatus &) noexcept>;
-	using responseMethod = std::function<void(Response &) noexcept>;
-	using requestResponseMethod = std::function<void(Request &, std::string &, HTTPStatus &) noexcept>;
+	using requestMethod = std::function<void(Request &, HTTPStatus &)>;
+	using responseMethod = std::function<void(Response &)>;
+	using requestResponseMethod = std::function<void(Request &, std::string &, HTTPStatus &)>;
 	using networkMethod = std::function<void(clientDialog &)>;
-	using confMethod = std::function<void(const std::map<std::string, std::string> &) noexcept>;
-	using logRequestMethod = std::function<void(Request const &) noexcept>;
-	using logResponseMethod = std::function<void(Response const &) noexcept>;
-	using noMethod = std::function<void(void) noexcept>;
+	using confMethod = std::function<void(const std::map<std::string, std::string> &)>;
+	using logRequestMethod = std::function<void(Request const &)>;
+	using logResponseMethod = std::function<void(Response const &)>;
+	using noMethod = std::function<void(void)>;
 
 public:
 
