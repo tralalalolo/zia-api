@@ -25,7 +25,7 @@ std::string HTTPStatus::message(HTTPStatus_enum ev) noexcept
 	auto e = static_cast<HTTPStatus_enum>(ev);
 	switch (e)
 	{
-		case HTTPStatus_enum::NO_ERROR:
+		case HTTPStatus_enum::NONE_ERROR:
 			return "";
 		case HTTPStatus_enum::ALL_ERROR:
 			return "Unknown Error";

@@ -13,7 +13,7 @@
 
 enum class HTTPStatus_enum
 {
-	NO_ERROR = 0,
+	NONE_ERROR = 0,
 	ALL_ERROR = 1,
 	//INFORMATIONAL
 	CONTINUE = 100,
